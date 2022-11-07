@@ -1,0 +1,134 @@
+<!--
+/*
+ * Licensed Materials - Property of IBM
+ *
+ * 5724-U18
+ *
+ * (C) Copyright IBM Corp. 2018 All Rights Reserved
+ *
+ * US Government Users Restricted Rights - Use, duplication or
+ * disclosure restricted by GSA ADP Schedule Contract with
+ * IBM Corp.
+ */
+-->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html >
+<head>
+  <script type="text/javascript" >
+	function setup()
+	{
+
+		var fe = window.frameElement;
+		var table = document.getElementById( "resizeTable" );
+		if( table != undefined )
+		{
+			var value = parent.getValue( "resize_title" );
+			table.rows[0].cells[0].innerHTML = value;
+
+			var value = parent.getValue( "resize_default" );
+			table.rows[1].cells[1].innerHTML = value;
+
+			var height   = table.scrollHeight
+			var width    = table.scrollWidth
+			fe.width  = width + 4;
+			fe.height = height + 4;
+		}
+		fe.onblur = closeResize;
+	}
+
+	
+  </script>
+</head>
+<body onLoad="setup()">
+  <script type="text/javascript" >
+	function setResolution( opt )
+	{
+		var ctrl = document.getElementById( "" + opt );
+		if( ctrl != undefined )
+		{
+			ctrl.checked = true;
+		}
+	}
+
+	function closeResize()
+	{
+		window.frameElement.style.visibility = "hidden";
+	}
+
+  
+	function resizeEvent( id ) 
+	{
+		parent.resize( id );
+	}
+  </script>
+
+  <ul>
+	<li onclick="resizeEvent(0)">720x1200</li>
+	<li onclick="resizeEvent(1)">768x1024</li>
+	<li onclick="resizeEvent(2)">720x1200</li>
+	<li onclick="resizeEvent(7)">800x1200</li>
+	<li onclick="resizeEvent(3)">1024x1280</li>
+	<li onclick="resizeEvent(4)">1080x1920</li>
+	<li onclick="resizeEvent(5)">1200x1600</li>
+	<li onclick="resizeEvent(6)">1200x1920</li>
+  </ul>
+  <!--
+  <table id=resizeTable border="0">
+   	<tr bgcolor="#E0E0FF" style="color:#000000" border="0">
+   	  <td colspan="2" >
+   	  </td>
+    </tr>
+    <tr border="0">
+   	  <td>
+      	<input id="0" type="radio" name="ctrlSize" onClick="resizeEvent( '0' )"></input>
+      </td>
+      <td></td>
+    </tr>
+    <tr border="0">
+   	  <td>
+      	<input id="1" type="radio" name="ctrlSize" onClick="resizeEvent( '1' )"></input>
+      </td>
+      <td>"720x1200"</td>
+    </tr>
+    <tr border="0">
+   	  <td>
+      	<input id="2" type="radio"  name="ctrlSize" onClick="resizeEvent( '2' )"></input>
+      </td>
+      <td>"768x1024"</td>
+    </tr>
+    <tr border="0">
+   	  <td>
+      	<input id="7" type="radio"  name="ctrlSize" onClick="resizeEvent( '7' )"></input>
+      </td>
+      <td>"800x1200"</td>
+    </tr>
+    <tr border="0">
+   	  <td>
+      	<input id="3" type="radio"  name="ctrlSize" onClick="resizeEvent( '3' )"></input>
+      </td>
+      <td>"1024x1280"</td>
+    </tr>
+    <tr border="0">
+   	  <td>
+      	<input id="4" type="radio"  name="ctrlSize" onClick="resizeEvent( '4' )"></input>
+      </td>
+      <td>"1080x1920"</td>
+    </tr>
+    <tr border="0">
+   	  <td>
+      	<input id="5" type="radio"  name="ctrlSize" onClick="resizeEvent( '5' )"></input>
+      </td>
+      <td>"1200x1600"</td>
+    </tr>
+    <tr border="0">
+   	  <td>
+      	<input id="6" type="radio"  name="ctrlSize" onClick="resizeEvent( '6' )"></input>
+      </td>
+      <td>"1200x1920"</td>
+    </tr>
+  </table>
+  -->
+
+</body>
+</html>

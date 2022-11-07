@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./bim-viewer.css" />
+    <link rel="stylesheet" type="text/css" href="./tree.css" />
+    <link rel="stylesheet" type="text/css" href="./panel.css" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IFC.js</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <script type="module" src="./main.js"></script>
+    
+  </head>
+  <body>
+    <div style="display:flex; flex-direction: column; height:100vh; width: 100vw;">
+      <input type="file" name="load" id="file-input" accept=".ifc" style="min-height:30px; max-height: 30px;"/>
+      <div style="display:flex; flex:1; overflow: hidden">
+        <div id="viewer-container" style="flex: 1"></div>
+        <div id="rightPanels" style=""></div>
+      </div>
+    </div>
+   
+    <!--
+    <script type="text/javascript" src="build/ifcjs_bundled_iife.js"></script>
+    <script type="text/javascript">
+      //import("./build/ifcjs_bundled_esm.js").then( (module) => {
+        const module = ifcjs;
+        var IFCJSBIMViewer = module.IFCJSBIMViewer;
+        var container = document.getElementById("viewer-container");
+        var viewer = new IFCJSBIMViewer( { container });
+        window.myViewer = viewer;
+        viewer.addAxes();
+        viewer.addGrid();
+        viewer.enableToolbar();
+
+        viewer.addFileLoadListener((event) => {
+               console.log(event); 
+            });
+
+        viewer.addSelectionListener( (event) => {
+            console.log(event);
+        });
+
+        viewer.enableSelection();
+
+        var file = document.getElementById("file-input");
+        file.addEventListener(
+            "change",
+            (changed) => {
+                const file = changed.target.files[0];
+                var ifcURL = URL.createObjectURL(file);
+                viewer.loadFile(ifcURL);
+            },
+            false
+        );
+      //})
+    </script>
+    -->
+  </body>
+</html>

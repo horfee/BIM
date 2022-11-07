@@ -1,0 +1,62 @@
+
+.treeContainer {
+    overflow: scroll;
+    /*background: rgb(155 165 177 / 81%);*/
+    border: 1px solid lightgray;
+    background: repeating-linear-gradient(180deg, rgb(135, 134, 157)  0, rgb(135, 134, 157) attr(line-height), rgba(255,255,255,1) attr(line-height), rgba(255,255,255,1) calc(attr(line-height)*2)) repeat-y;
+    background-attachment: local;
+}
+
+.treeNodeHeader {
+    display: flex;
+    
+    /*height: 30px;*/
+}
+
+.treeNodeHeader:hover {
+    background: #dedede6f;
+
+}
+.treeNodeHeader .label {
+    flex: 1;
+    display:flex;
+    white-space: nowrap;
+}
+
+.treeNode {
+    width: fit-content;
+}
+
+.treeNode:not([expanded]) .children{
+    display: none;
+}
+
+.treeNode[indent] {
+    padding-left: 15px;
+}
+
+.treeNode[selected]>.treeNodeHeader {
+    background: rgba( 200, 200, 200, 0.8);
+    font-style: italic;
+}
+
+.treeNode>.treeNodeHeader>.toggletreeNode {
+    display: flex;
+}
+
+.treeNode>.treeNodeHeader>.toggletreeNode>img {
+    margin: 2px;
+    transform: rotate(0deg);
+    transition: transform 0.2s;
+}
+
+.treeNode[expanded]>.treeNodeHeader>.toggletreeNode>img {
+    transform: rotate(90deg);
+    transition: transform 0.2s;
+}
+
+.treeNode>.treeNodeHeader>.toggletreeNode[data-nb-child="0"] {
+    display: none;
+}
+
+

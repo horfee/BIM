@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="BIM_IFCJS_Viewer">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="MAXIMO_HOME" value="${MAXIMO_HOME}"/>
+	<property name="INSTALL_PATH" value="${MAXIMO_HOME}/../wlp/usr/servers/MXServer/apps/maximoui.war" />
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="BIM_IFCJS_Viewer.classpath">
+        <pathelement location="maximo/applications/maximo/businessobjects/classes"/>
+        <pathelement location="maximo/tools/maximo/classes"/>
+        <pathelement location="maximo/applications/maximo/maximouiweb/webmodule/WEBF-INF/classes"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/annotations-16.0.2.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/ant.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/antisamy-1.5.7.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/antlr4-runtime-4.8.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/api-client.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/api-dep.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/api-dl.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/aspectjweaver.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/aws-java-sdk-core-1.12.54.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/aws-java-sdk-kms-1.12.54.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/aws-java-sdk-s3-1.12.54.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/axis-ant.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/axis.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/axis2.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/batik-constants-1.9.1.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/batik-css-1.9.1.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/batik-i18n-1.9.1.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/batik-util-1.9.1.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/bcel-5.2.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/cognos-axis.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/cognosClient.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/com.ibm.ws.admin.core.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/com.ibm.ws.admin.services.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/com.ibm.ws.emf_2.1.0.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/com.ibm.ws.runtime.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/com.ibm.ws.wlm.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/com.static.analyzer.annotation.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/commons-codec-1.15.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/commons-collections4-4.1.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/commons-compress-1.20.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/commons-discovery.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/commons-httpclient.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/commons-io-2.9.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/commons-lang3-3.4.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/commons-logging-1.1.3.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/commons-logging-1.2.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/commons-logging.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/commons-math3-3.6.1.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/commons-net-1.4.0.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/commons-pool-1.5.4.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/contentloader.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/curvesapi-1.06.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/db2jcc_license_cu.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/db2jcc.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/docloud_api_java_client-1.0-STABLE-b277.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/edm-server.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/fast-uuid-0.1.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/freemarker-2.3.22.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/google-api-client-1.25.0.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/google-api-client-appengine-1.25.0.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/google-api-client-jackson2-1.25.0.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/google-api-services-oauth2-v1-rev155-1.25.0.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/google-http-client-1.25.0.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/google-http-client-appengine-1.25.0.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/google-http-client-jackson2-1.25.0.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/google-oauth-client-1.25.0.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/graphql-java-16.1.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/GroupDocs.Conversion.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/gson-2.2.4.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/httpclient-4.5.13.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/httpcore-4.4.13.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/httpmime-4.5.13.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/ical4j-3.0.18.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/icu4j.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/ion-java-1.0.2.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/iri-0.8.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/j2ee.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jackson-annotations-2.12.1.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jackson-core-2.12.1.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jackson-core-asl-1.9.13.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jackson-databind-2.12.1.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jackson-dataformat-cbor-2.12.3.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jackson-dataformat-yaml-2.11.3.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/java-dataloader-2.2.3.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/javax.json-api-1.1.4.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jaws.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jaxen-1.1.1.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jaxrpc.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jdom.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jena-2.6.3-patched.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jhbasic-2.0_05.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jmespath-java-1.12.54.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/joda-time-2.8.1.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/json4j.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jsoup-1.14.2.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jsr181.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/junit-4.4.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jviews-chart.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jviews-diagrammer.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jviews-framework-lib.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jviews-gantt.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/jython.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/kafka-clients-2.5.0.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/ldapbp.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/ldapnov.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/license_metric_logger_2.1.1.201507131115.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/log4j-1.2.16.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/lowagie.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/lz4-java-1.7.1.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/mas-data-dictionary-lib-1.0.0.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/maxcom.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/maximo_client.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/maximo_registry.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/mof-api-java.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/nekohtml-1.9.22.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/netty-all-4.1.63.Final.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/netty-tcnative-boringssl-static-2.0.38.Final.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/oal-api.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/oal-common.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/oal-topomgr.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/oauth.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/odmeall.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/oplall.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/oraclethin.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/oslcquery.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/platform-model.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/poi-4.1.2.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/poi-excelant-4.1.2.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/poi-ooxml-4.1.2.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/poi-ooxml-schemas-4.1.2.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/pop3.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/pushy-0.15.0.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/rcl_ibmratl.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/reactive-streams-1.0.2.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/remoteaccess.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/resolver.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/sac.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/sdb-1.3.2.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/serializer.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/slf4j-api-1.6.4.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/slf4j-log4j12-1.6.4.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/slf4j-simple-1.7.29.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/snappy-java-1.1.7.3.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/soap.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/softlayer-api-client-0.2.3.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/spatiotemporal-core-1.6.0.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/sqlite-jdbc-3.27.2.1.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/sqljdbc.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/ssh.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/tdb-0.8.7-patched.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/tools.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/vertx-core-4.1.0.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/wsdl4j.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/xercesImpl.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/xml-apis-ext-1.3.04.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/xml-apis.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/xmlbeans-3.1.0.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/lib/xmlgraphics-commons-2.6.jar"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/businessobjects/classes"/>
+        <pathelement location="${MAXIMO_HOME}/applications/maximo/maximouiweb/webmodule/WEB-INF/classes"/>
+    </path>
+    <target name="init">
+        <mkdir dir="maximo/applications/maximo/businessobjects/classes"/>
+        <mkdir dir="maximo/tools/maximo/classes"/>
+        <mkdir dir="maximo/applications/maximo/maximouiweb/webmodule/WEBF-INF/classes"/>
+        <copy includeemptydirs="false" todir="maximo/applications/maximo/businessobjects/classes">
+            <fileset dir="maximo/applications/maximo/businessobjects/src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="maximo/tools/maximo/classes">
+            <fileset dir="maximo/tools/maximo/src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="maximo/applications/maximo/maximouiweb/webmodule/WEBF-INF/classes">
+            <fileset dir="maximo/applications/maximo/maximouiweb/src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="maximo/applications/maximo/businessobjects/classes"/>
+        <delete dir="maximo/tools/maximo/classes"/>
+        <delete dir="maximo/applications/maximo/maximouiweb/webmodule/WEBF-INF/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="maximo/applications/maximo/businessobjects/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="maximo/applications/maximo/businessobjects/src"/>
+            <classpath refid="BIM_IFCJS_Viewer.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="maximo/tools/maximo/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="maximo/tools/maximo/src"/>
+            <classpath refid="BIM_IFCJS_Viewer.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="maximo/applications/maximo/maximouiweb/webmodule/WEBF-INF/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="maximo/applications/maximo/maximouiweb/src"/>
+            <classpath refid="BIM_IFCJS_Viewer.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+	<target description="install built file into WAR file" name="install" depends="build">
+		<echo>Copying businessobjects classes</echo>
+		<copy todir="${INSTALL_PATH}/WEB-INF/businessobjects.jar/"></copy>
+		<echo>Copying maximo ui web classes</echo>
+		<copy todir="${INSTALL_PATH}/WEB-INF/classes/"></copy>
+	</target>
+</project>

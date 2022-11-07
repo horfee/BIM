@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+#viewer-container {
+    width: 100%;
+    height: 100%;
+}
+
+
+#rightPanels .structure {
+    height: 50%;
+}
+
+#rightPanels .properties {
+    height: 50%;
+}
+
+#rightPanels .panel {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #2b4760;
+    box-sizing: border-box;
+    background: #4f81af;
+    min-width:400px;
+    max-width: 400px;;
+}
+
+
+#rightPanels {
+    background: url('resources/row.png') repeat;
+    box-shadow: -5px 0px 19px 6px #0000007a;
+    z-index: 1;
+    
+}
+#rightPanels .panel .header {
+    box-shadow: inset 1px -7px 10px -2px #2b4760;;
+    color: rgb(207, 207, 207);
+    min-height: 24px;
+    padding-left: 5px;
+}
+
+#rightPanels .panel .treeContainer {
+    flex: 1;
+}
+
+#rightPanels .treeNodeHeader {
+    height: 24px;
+}
+
+#rightPanels .treeContainer {
+    background: repeating-linear-gradient(180deg, rgb(94 136 175) 0, rgb(94 136 176) 24px, rgb(255 255 255 / 50%) 25px, rgb(255 255 255 / 49%) 48px) repeat-y;
+    background-attachment: local;
+}
+
+/*
+.structure .treeContainer {
+    min-height: 300px;
+    max-height: 500px;
+}
+
+.properties .treeContainer {
+    min-height: 300px;
+    max-height: 500px;
+}*/

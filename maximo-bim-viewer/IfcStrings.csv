@@ -1,0 +1,494 @@
+IFCACTORROLE;Rôle d'acteur
+IFCADDRESS;Adresse
+IFCPOSTALADDRESS;Addresse postale
+IFCTELECOMADDRESS;Adresse électronique
+IFCAPPLICATION;Application
+IFCAPPLIEDVALUE;Valeur appliquée
+IFCCOSTVALUE;Valeur de coût
+IFCAPPROVAL;Approbation
+IFCBOUNDARYCONDITION;Condition de limite
+IFCBOUNDARYEDGECONDITION;Condition d'arête limite
+IFCBOUNDARYFACECONDITION;Condition de face limite
+IFCBOUNDARYNODECONDITION;Condition de nœud limite
+IFCCONNECTIONGEOMETRY;Connexion géométrique
+IFCCONSTRAINT;Contrainte
+IFCMETRIC;Métrique
+IFCOBJECTIVE;Objectif
+IFCCOORDINATEOPERATION;Opération entre systèmes de coordonnées de référence
+IFCCOORDINATEREFERENCESYSTEM;Système de coordonnées de référence
+IFCDERIVEDUNIT;Unité dérivée
+IFCDERIVEDUNITELEMENT;Elément d'unité dérivée
+IFCDIMENSIONALEXPONENTS;exposants dimensionnels
+IFCCLASSIFICATION;Classification
+IFCDOCUMENTINFORMATION;Métadonnées de document
+IFCLIBRARYINFORMATION;Information de bibliothèque
+IFCEXTERNALREFERENCE;Référence externe
+IFCCLASSIFICATIONREFERENCE;Référence de classification
+IFCDOCUMENTREFERENCE;Référence à un document
+IFCLIBRARYREFERENCE;Référence de bibliothèque
+IFCGRIDAXIS;Axe de grille
+IFCIRREGULARTIMESERIESVALUE;Valeur(s) d'un élément d'une série temporelle irrégulière
+IFCLIGHTDISTRIBUTIONDATA;Donnée de distribution lumineuse
+IFCLIGHTINTENSITYDISTRIBUTION;Distribution de l'intensité lumineuse
+IFCMATERIALCLASSIFICATIONRELATIONSHIP;Assignation de classification à un matériau
+IFCMATERIALDEFINITION;Définition de matériau
+IFCMATERIAL;Matériau
+IFCMATERIALCONSTITUENT;Matériau constitutif
+IFCMATERIALCONSTITUENTSET;Ensemble de matériaux constitutifs
+IFCMATERIALLAYER;Couche de matériau
+IFCMATERIALLAYERWITHOFFSETS;Couche de matériau avec décalage
+IFCMATERIALLAYERSET;Ensemble de couches de matériau homogène
+IFCMATERIALPROFILE;Matériau de profil
+IFCMATERIALPROFILESET;Ensemble de matériaux de profil
+IFCMATERIALLIST;Liste de matériaux
+IFCMATERIALUSAGEDEFINITION;Définition d'usage de matériau
+IFCMATERIALLAYERSETUSAGE;Mise en place d'un ensemble de couches de matériau homogène
+IFCMATERIALPROFILESETUSAGE;Mise en place d'un ensemble de matériaux de profil
+IFCMEASUREWITHUNIT;Mesure avec unité
+IFCMONETARYUNIT;Unité monétaire
+IFCNAMEDUNIT;Unité nommée
+IFCCONTEXTDEPENDENTUNIT;Unité dépendant du contexte
+IFCCONVERSIONBASEDUNIT;Unité basée sur une mesure avec unité
+IFCCONVERSIONBASEDUNITWITHOFFSET;Unité basée sur une mesure avec unité et avec décalage
+IFCSIUNIT;Unité du système international
+IFCOBJECTPLACEMENT;Positionnement d'objet
+IFCGRIDPLACEMENT;Positionnement de grille
+IFCLOCALPLACEMENT;Positionnement local
+IFCORGANIZATION;Organisation
+IFCOWNERHISTORY;Historique des actions sur l'objet
+IFCPERSON;Personne
+IFCPERSONANDORGANIZATION;Personne agissant au nom d'une organisation
+IFCPHYSICALQUANTITY;Quantité physique
+IFCPHYSICALCOMPLEXQUANTITY;Quantité physique complexe
+IFCPHYSICALSIMPLEQUANTITY;Quantité physique simple
+IFCQUANTITYAREA;Quantité de surface
+IFCQUANTITYCOUNT;Quantité de comptage
+IFCQUANTITYLENGTH;Quantité de longueur
+IFCQUANTITYTIME;Quantité de durée
+IFCQUANTITYVOLUME;Quantité de volume
+IFCQUANTITYWEIGHT;Quantité de poids
+IFCPRESENTATIONITEM;Item de présentation
+IFCCOLOURRGBLIST;Liste de couleur RGB
+IFCCOLOURSPECIFICATION;Spécification de couleur
+IFCCOLOURRGB;Couleur RGB
+IFCPREDEFINEDITEM;Item pré-défini
+IFCPREDEFINEDCOLOUR;Couleur pré-définie
+IFCPREDEFINEDTEXTFONT;Police de caractères pré-définie
+IFCTEXTSTYLEFONTMODEL;Modèle de police de style de texte
+IFCSURFACESTYLELIGHTING;Style d'éclairage de surface
+IFCSURFACESTYLEREFRACTION;Style de réfraction de surface
+IFCSURFACESTYLESHADING;Style d'ombrage de surface
+IFCSURFACESTYLERENDERING;Style de rendu de surface
+IFCSURFACESTYLEWITHTEXTURES;Style de surface texturée
+IFCSURFACETEXTURE;Texture de surface
+IFCBLOBTEXTURE;Blob de texture
+IFCIMAGETEXTURE;Texture d'image
+IFCTEXTSTYLETEXTMODEL;Modèle de style de texte
+IFCTEXTURECOORDINATE;Coordonnées de texture
+IFCTEXTURECOORDINATEGENERATOR;Générateur de coordonnées de texture
+IFCTEXTUREMAP;Image de texture
+IFCTEXTUREVERTEX;Sommet de texture
+IFCTEXTUREVERTEXLIST;Liste des sommets de texture
+IFCPRESENTATIONLAYERASSIGNMENT;Assignation de calque
+IFCPRESENTATIONLAYERWITHSTYLE;Assignation de calque avec style
+IFCPRESENTATIONSTYLE;Style de présentation
+IFCCURVESTYLE;Style de courbe
+IFCFILLAREASTYLE;Style de remplissage de surface
+IFCSURFACESTYLE;Style de surface
+IFCTEXTSTYLE;Style de texte
+IFCPRESENTATIONSTYLEASSIGNMENT;Assignation d'un type de présentation
+IFCPRODUCTREPRESENTATION;Représentation du produit
+IFCMATERIALDEFINITIONREPRESENTATION;Représentation de définition de matériau
+IFCPRODUCTDEFINITIONSHAPE;Représentation de la forme du produit
+IFCPROFILEDEF;Définition de profil
+IFCCOMPOSITEPROFILEDEF;Définition de profil composite
+IFCDERIVEDPROFILEDEF;Définition d'un profil dérivé
+IFCASYMMETRICISHAPEPROFILEDEF;Définition de section d'un profil en I assymétrique
+IFCCSHAPEPROFILEDEF;Définition de section d'un profil en C
+IFCCIRCLEPROFILEDEF;Définition de profil circulaire
+IFCCIRCLEHOLLOWPROFILEDEF;Définition de profil circulaire épais
+IFCELLIPSEPROFILEDEF;Définition de profil ellipsoïdal
+IFCISHAPEPROFILEDEF;Définition de section d'un profil en I
+IFCLSHAPEPROFILEDEF;Définition de section d'un profil en L
+IFCRECTANGLEPROFILEDEF;Définition de profil rectangulaire
+IFCTSHAPEPROFILEDEF;Définition de section d'un profil en T
+IFCTRAPEZIUMPROFILEDEF;Définition de section d'un profil trapézoïdal
+IFCUSHAPEPROFILEDEF;Définition de section d'un profil en U
+IFCZSHAPEPROFILEDEF;Définition de section d'un profil en Z
+IFCPROPERTYABSTRACTION;Propriété abstraite
+IFCEXTENDEDPROPERTIES;Propriétés étendues
+IFCMATERIALPROPERTIES;Propriétés de matériau
+IFCPROFILEPROPERTIES;Propriétés de section de profil
+IFCPREDEFINEDPROPERTIES;Propriétés prédéfinies
+IFCREINFORCEMENTBARPROPERTIES;Propriétés du ferraillage
+IFCSECTIONPROPERTIES;Propriétés de section
+IFCPROPERTY;Propriété
+IFCCOMPLEXPROPERTY;Propriété complexe
+IFCSIMPLEPROPERTY;Propriété simple
+IFCPROPERTYBOUNDEDVALUE;Propriété à valeur bornée
+IFCPROPERTYENUMERATEDVALUE;Propriété à valeur issue d'un énumération
+IFCPROPERTYLISTVALUE;Propriété à liste de valeurs
+IFCPROPERTYSINGLEVALUE;Propriété à valeur simple
+IFCPROPERTYTABLEVALUE;Propriété à valeurs tabulaires
+IFCPROPERTYENUMERATION;Propriété à valeurs énumérées
+IFCREFERENCE;Référence
+IFCREPRESENTATION;Représentation 
+IFCSHAPEMODEL;Modèle de forme
+IFCSHAPEREPRESENTATION;Représentation de forme
+IFCTOPOLOGYREPRESENTATION;Représentation topologique
+IFCSTYLEMODEL;Modèle de style
+IFCREPRESENTATIONCONTEXT;Contexte de représentation
+IFCREPRESENTATIONITEM;Item de représentation
+IFCGEOMETRICREPRESENTATIONITEM;Item de représentation géométrique
+IFCANNOTATIONFILLAREA;Zone de remplissage d'annotation
+IFCBOOLEANRESULT;Résultat booléen
+IFCBOOLEANCLIPPINGRESULT;Résultat d'opération booléen
+IFCBOUNDINGBOX;Boite englobante
+IFCCARTESIANPOINTLIST;Liste de points cartésiens
+IFCCARTESIANTRANSFORMATIONOPERATOR;Opérateur de transformation cartésienne
+IFCCARTESIANTRANSFORMATIONOPERATOR2D;Opérateur 2D de transformation cartésienne
+IFCCARTESIANTRANSFORMATIONOPERATOR2DNONUNIFORM;Opérateur 2D de transformation cartésienne non uniforme
+IFCCARTESIANTRANSFORMATIONOPERATOR3D;Opérateur 3D de transformation cartésienne
+IFCCARTESIANTRANSFORMATIONOPERATOR3DNONUNIFORM;Opérateur 3D de transformation cartésienne non uniforme
+IFCCOMPOSITECURVESEGMENT;Segment de courbe composite
+IFCCSGPRIMITIVE3D;Primitive 3D Csg
+IFCBLOCK;Parallélépipède
+IFCRIGHTCIRCULARCONE;Cône de révolution
+IFCRIGHTCIRCULARCYLINDER;Cylindre de révolution
+IFCSPHERE;Sphère
+IFCCURVE;Courbe 
+IFCBOUNDEDCURVE;Courbe englobée
+IFCBSPLINECURVE;Courbe Bspline
+IFCRATIONALBSPLINECURVEWITHKNOTS;Courbes Bsplines rationnelles avec nœuds
+IFCCOMPOSITECURVE;Courbe composite
+IFCCOMPOSITECURVEONSURFACE;Courbe composite sur surface
+IFCBOUNDARYCURVE;Courbe limite
+IFCPOLYLINE;Polyligne
+IFCTRIMMEDCURVE;Courbe de rognage
+IFCCONIC;Conique
+IFCCIRCLE;Cercle
+IFCELLIPSE;Ellipse
+IFCLINE;Ligne
+IFCOFFSETCURVE2D;Décalage de courbe 2D
+IFCOFFSETCURVE3D;Décalage de courbe 3D
+IFCPCURVE;Courbe basée sur une surface
+IFCDIRECTION;Direction
+IFCLIGHTSOURCE;Source de lumière
+IFCLIGHTSOURCEAMBIENT;Source de lumière ambiante
+IFCLIGHTSOURCEDIRECTIONAL;Source de lumière directionnelle
+IFCLIGHTSOURCESPOT;Source de lumière ponctuelle
+IFCPLACEMENT;Positionnement
+IFCAXIS1PLACEMENT;Position et direction d'un axe
+IFCPLANAREXTENT;Extension planaire
+IFCPLANARBOX;Boite planaire
+IFCPOINT;Point
+IFCCARTESIANPOINT;Point cartésien
+IFCPOINTONCURVE;Point de courbe
+IFCPOINTONSURFACE;Point de surface
+IFCSOLIDMODEL;Modèle solide
+IFCCSGSOLID;Solid Csg
+IFCADVANCEDBREP;Représentation frontière avancée
+IFCADVANCEDBREPWITHVOIDS;Représentation frontière avancée avec trous
+IFCREVOLVEDAREASOLID;Solide de révolution surfacique
+IFCSURFACE;Surface
+IFCBOUNDEDSURFACE;Surface englobée
+IFCBSPLINESURFACE;Surface Bspline
+IFCRATIONALBSPLINESURFACEWITHKNOTS;Surfaces Bsplines rationnelles avec nœuds
+IFCELEMENTARYSURFACE;Surface élémentaire
+IFCCYLINDRICALSURFACE;Surface cylindrique
+IFCPLANE;Plan
+IFCSWEPTSURFACE;Surface produite par extrusion d'une courbe le long d'une courbe
+IFCSURFACEOFLINEAREXTRUSION;Extrusion linéaire ou surfacique
+IFCSURFACEOFREVOLUTION;Surface de révolution
+IFCTESSELLATEDITEM;Tessellation
+IFCTESSELLATEDFACESET;Ensemble de faces tessellées
+IFCTRIANGULATEDFACESET;Ensemble de faces triangulées
+IFCVECTOR;Vecteur
+IFCTOPOLOGICALREPRESENTATIONITEM;Item de représentation topologique
+IFCCONNECTEDFACESET;Ensemble de faces connectées
+IFCCLOSEDSHELL;Enveloppe fermée
+IFCEDGE;Arête
+IFCORIENTEDEDGE;Arête orientée
+IFCSUBEDGE;Sous arête
+IFCFACE;Face
+IFCADVANCEDFACE;Face avancée
+IFCFACEBOUND;Contour de face
+IFCFACEOUTERBOUND;Contour extérieur de face
+IFCLOOP;Boucle
+IFCVERTEXLOOP;Boucle de points
+IFCPATH;Chemin
+IFCVERTEX;Sommet
+IFCVERTEXPOINT;Sommet (point)
+IFCAPPROVALRELATIONSHIP;Relation d'approbation
+IFCDOCUMENTINFORMATIONRELATIONSHIP;Relation entre un document et des documents associés
+IFCMATERIALRELATIONSHIP;Relation entre matériaux
+IFCORGANIZATIONRELATIONSHIP;Relation entre organisations
+IFCROOT;Racine
+IFCOBJECTDEFINITION;Définition d'objet
+IFCCONTEXT;Contexte
+IFCPROJECT;Projet
+IFCOBJECT;Objet
+IFCACTOR;Acteur
+IFCOCCUPANT;Occupant
+IFCCONTROL;Contrôle
+IFCACTIONREQUEST;Requête d'action
+IFCCOSTITEM;Item de coût
+IFCCOSTSCHEDULE;IfcCostSchedule
+IFCPERFORMANCEHISTORY;Historique de performance
+IFCPERMIT;Permis
+IFCWORKCALENDAR;Calendrier de travail
+IFCWORKCONTROL;Contrôle des travaux
+IFCWORKPLAN;Planning de travail
+IFCWORKSCHEDULE;Tache unitaire de travail
+IFCGROUP;Groupe
+IFCASSET;Biens
+IFCINVENTORY;Inventaire
+IFCSYSTEM;Système
+IFCBUILDINGSYSTEM;Système
+IFCDISTRIBUTIONSYSTEM;Système de distribution
+IFCDISTRIBUTIONCIRCUIT;Circuit de distribution
+IFCSTRUCTURALANALYSISMODEL;Modèle d'analyse structurelle
+IFCZONE;Zone
+IFCPROCESS;Processus
+IFCEVENT;Evènement
+IFCPROCEDURE;Procédure
+IFCTASK;Tâche
+IFCPRODUCT;Produit
+IFCANNOTATION;Annotation
+IFCELEMENT;Élément
+IFCBUILDINGELEMENT;Elément de construction
+IFCBEAM;Poutre
+IFCBEAMSTANDARDCASE;Poutre standard
+IFCBUILDINGELEMENTPROXY;Elément de construction non défini
+IFCCHIMNEY;Cheminée
+IFCCOLUMN;Poteau
+IFCCOLUMNSTANDARDCASE;Poteau standard
+IFCCOVERING;Revêtement
+IFCCURTAINWALL;Mur rideau
+IFCDOOR;Porte
+IFCDOORSTANDARDCASE;porte standard
+IFCFOOTING;Fondation
+IFCMEMBER;Membre
+IFCMEMBERSTANDARDCASE;Membre standard
+IFCPILE;Pieu
+IFCPLATE;Plaque
+IFCPLATESTANDARDCASE;Plaque standard
+IFCRAILING;Garde corps
+IFCRAMP;Rampe
+IFCRAMPFLIGHT;Volée
+IFCROOF;Toiture
+IFCSHADINGDEVICE;Protection solaire
+IFCSLAB;Dalle
+IFCSLABELEMENTEDCASE;Dalle composite
+IFCSLABSTANDARDCASE;Dalle standard
+IFCSTAIR;Escalier
+IFCSTAIRFLIGHT;Volée d'escalier
+IFCWALL;Mur
+IFCWALLELEMENTEDCASE;Mur composite
+IFCWALLSTANDARDCASE;Mur standard
+IFCWINDOW;Fenêtre
+IFCWINDOWSTANDARDCASE;Fenêtre standard
+IFCDISTRIBUTIONELEMENT;Elément de distribution
+IFCDISTRIBUTIONCONTROLELEMENT;Élément de circuit de distribution
+IFCACTUATOR;Appareillage de commande
+IFCALARM;Alarme
+IFCCONTROLLER;Organe de contrôle
+IFCFLOWINSTRUMENT;Instrument d'installation fluides
+IFCPROTECTIVEDEVICETRIPPINGUNIT;Unité de déclenchement d'équipement de protection
+IFCSENSOR;Capteur
+IFCUNITARYCONTROLELEMENT;Elément de contrôle unitaire
+IFCDISTRIBUTIONFLOWELEMENT;Elément de distribution de fluide
+IFCDISTRIBUTIONCHAMBERELEMENT;Elément de chambre de distribution
+IFCENERGYCONVERSIONDEVICE;Dispositif de conversion d'énergie
+IFCFLOWCONTROLLER;Contrôleur de débit
+IFCFLOWFITTING;Raccord d'installation fluides
+IFCFLOWMOVINGDEVICE;Dispositif de circulation de fluide
+IFCFLOWSEGMENT;Tronçon d'installation fluides
+IFCFLOWSTORAGEDEVICE;Appareil de stockage de fluide
+IFCFLOWTERMINAL;Elément terminal d'installation fluides
+IFCFLOWTREATMENTDEVICE;Appareil de traitement de fluide
+IFCELEMENTASSEMBLY;Assemblage d'éléments
+IFCELEMENTCOMPONENT;Composant d'élément
+IFCBUILDINGELEMENTPART;Partie d'élément de construction
+IFCDISCRETEACCESSORY;Accessoire composé
+IFCFASTENER;Elément d'assemblage
+IFCREINFORCINGELEMENT;Elément d'armature
+IFCREINFORCINGBAR;barre d'armature
+IFCREINFORCINGMESH;Treillis
+IFCTENDON;Cable
+IFCTENDONANCHOR;Ancrage
+IFCVIBRATIONISOLATOR;Isolation anti-vibratoire
+IFCOPENINGELEMENT;Ouverture
+IFCSURFACEFEATURE;Traitement de surface
+IFCFURNISHINGELEMENT;Elément de mobilier
+IFCFURNITURE;Mobilier
+IFCSYSTEMFURNITUREELEMENT;Elément de l'ameublement
+IFCGEOGRAPHICELEMENT;Elément géographique
+IFCTRANSPORTELEMENT;Equipement de transport
+IFCVIRTUALELEMENT;Élément virtuel
+IFCGRID;Grille
+IFCPORT;Port
+IFCDISTRIBUTIONPORT;Port de distribution
+IFCPROXY;Objet utilisateur (défini par l'utilisateur)
+IFCSPATIALELEMENT;Element spatial
+IFCEXTERNALSPATIALSTRUCTUREELEMENT;Elément de la structure spatiale extérieure
+IFCEXTERNALSPATIALELEMENT;Elément spatial extérieur
+IFCSPATIALSTRUCTUREELEMENT;Elément de la structure spatiale
+IFCBUILDING;Bâtiment
+IFCBUILDINGSTOREY;Niveau
+IFCSITE;Site
+IFCSPACE;Local
+IFCSPATIALZONE;Zone spatiale
+IFCSTRUCTURALACTIVITY;Activité structurelle
+IFCSTRUCTURALACTION;Action structurelle
+IFCSTRUCTURALCONNECTION;Liaison structurelle
+IFCRESOURCE;Ressource
+IFCCONSTRUCTIONRESOURCE;Ressource de construction
+IFCCONSTRUCTIONEQUIPMENTRESOURCE;Équipement utilisé pour la construction
+IFCCONSTRUCTIONMATERIALRESOURCE;Matériaux de construction
+IFCCONSTRUCTIONPRODUCTRESOURCE;Ressource d'un produit de construction
+IFCCREWRESOURCE;Équipe
+IFCLABORRESOURCE;Ressource en main d'œuvre
+IFCSUBCONTRACTRESOURCE;Ressource de sous-traitance
+IFCTYPEOBJECT;Définition d'un type d'objet type
+IFCTYPEPROCESS;Définition d'un type de processus
+IFCEVENTTYPE;Type d'évènement
+IFCPROCEDURETYPE;Type de procédure
+IFCTASKTYPE;Type de tâche
+IFCTYPEPRODUCT;Définition d'un type de produit
+IFCDOORSTYLE;Style de porte
+IFCELEMENTTYPE;Type d'élément 
+IFCBUILDINGELEMENTTYPE;Type d'élément de construction
+IFCBEAMTYPE;Type de poutre
+IFCBUILDINGELEMENTPROXYTYPE;Type d'élément de construction non défini
+IFCCHIMNEYTYPE;Type de cheminée
+IFCCOLUMNTYPE;Poteau type
+IFCCOVERINGTYPE;Revêtement type
+IFCCURTAINWALLTYPE;Type de mur rideau
+IFCDOORTYPE;Type de porte
+IFCFOOTINGTYPE;Fondation type
+IFCMEMBERTYPE;Type de membre
+IFCPILETYPE;Type de pieu
+IFCPLATETYPE;Type de plaque
+IFCRAILINGTYPE;Type de garde corps
+IFCRAMPFLIGHTTYPE;Type de volée
+IFCRAMPTYPE;Type de rampe
+IFCROOFTYPE;Type de toiture
+IFCSHADINGDEVICETYPE;Type de protection solaire
+IFCSLABTYPE;Type de dalle
+IFCSTAIRFLIGHTTYPE;Volée d'escalier type
+IFCSTAIRTYPE;Type d'escalier
+IFCWALLTYPE;Type de mur
+IFCWINDOWTYPE;Type de fenêtre
+IFCDISTRIBUTIONELEMENTTYPE;Type d'élément de distribution
+IFCDISTRIBUTIONCONTROLELEMENTTYPE;Type d'élément de circuit de distribution
+IFCACTUATORTYPE;Type d'appareillage de commande 
+IFCALARMTYPE;Alarme type
+IFCCONTROLLERTYPE;Organe de contrôle type
+IFCFLOWINSTRUMENTTYPE;Type d'instrument d'installation fluides
+IFCPROTECTIVEDEVICETRIPPINGUNITTYPE;Type d'unité de déclenchement d’équipement de protection
+IFCSENSORTYPE;Type de capteur
+IFCUNITARYCONTROLELEMENTTYPE;Type d'élément de contrôle unitaire
+IFCDISTRIBUTIONFLOWELEMENTTYPE;Type d'élément de distribution de fluide
+IFCDISTRIBUTIONCHAMBERELEMENTTYPE;Type d'élément de chambre de distribution
+IFCENERGYCONVERSIONDEVICETYPE;Type de dispositif de conversion d'énergie
+IFCFLOWCONTROLLERTYPE;Type de contrôleur de débit
+IFCFLOWFITTINGTYPE;Type de raccord d'installation fluides
+IFCFLOWMOVINGDEVICETYPE;Type de dispositif de circulation de fluide
+IFCFLOWSEGMENTTYPE;Type de tronçon d'installation fluides
+IFCFLOWSTORAGEDEVICETYPE;Type d'appareil de stockage de fluide
+IFCFLOWTERMINALTYPE;Type d'élément terminal d'installation fluides
+IFCFLOWTREATMENTDEVICETYPE;Type d'appareil de traitement de fluide
+IFCELEMENTASSEMBLYTYPE;Type d'assemblage d'éléments
+IFCELEMENTCOMPONENTTYPE;Type de composant d'élément
+IFCBUILDINGELEMENTPARTTYPE;Type de partie d'élément de construction
+IFCDISCRETEACCESSORYTYPE;Type d'accessoire composé
+IFCFASTENERTYPE;Type d'élément d'assemblage
+IFCREINFORCINGELEMENTTYPE;Type d'élément d'armature
+IFCREINFORCINGBARTYPE;Type de barre d'armature
+IFCREINFORCINGMESHTYPE;Type de treillis
+IFCTENDONANCHORTYPE;Type d'ancrage
+IFCTENDONTYPE;Type de cable
+IFCVIBRATIONISOLATORTYPE;Type d'solation anti-vibratoire
+IFCFURNISHINGELEMENTTYPE;Type d'élément de mobilier
+IFCFURNITURETYPE;Type de mobilier
+IFCSYSTEMFURNITUREELEMENTTYPE;Type d'élément de l'ameublement
+IFCGEOGRAPHICELEMENTTYPE;Type d'élément géographique
+IFCTRANSPORTELEMENTTYPE;Type d'équipement de transport
+IFCSPATIALELEMENTTYPE;Type d'élément spatial
+IFCSPATIALSTRUCTUREELEMENTTYPE;Type d'élément de la structure spatiale
+IFCSPACETYPE;Type de local
+IFCSPATIALZONETYPE;Type de zone spatiale
+IFCWINDOWSTYLE;Style de fenêtre
+IFCTYPERESOURCE;Définition d'un type de ressource
+IFCCONSTRUCTIONRESOURCETYPE;Type de ressource de construction
+IFCCONSTRUCTIONEQUIPMENTRESOURCETYPE;Équipement type utilisé pour la construction
+IFCCONSTRUCTIONMATERIALRESOURCETYPE;Matériaux de construction type
+IFCCONSTRUCTIONPRODUCTRESOURCETYPE;Type de ressource d'un produit de construction
+IFCCREWRESOURCETYPE;Équipe type
+IFCLABORRESOURCETYPE;Type de ressource en main d'œuvre
+IFCSUBCONTRACTRESOURCETYPE;Type de ressource de sous-traitance
+IFCPROPERTYDEFINITION;Définition de propriété
+IFCPROPERTYSETDEFINITION;Définition d'ensemble de propriété
+IFCDOORLININGPROPERTIES;Propriétés du cadre de porte
+IFCDOORPANELPROPERTIES;Propriétés du panneau de porte
+IFCREINFORCEMENTDEFINITIONPROPERTIES;Propriétés de définition du ferraillage
+IFCWINDOWLININGPROPERTIES;Propriétés de cadre de fenêtre
+IFCWINDOWPANELPROPERTIES;Propriétés des panneaux de fenêtre
+IFCPROPERTYSET;Ensemble de propriétés
+IFCQUANTITYSET;Ensemble de quantités
+IFCELEMENTQUANTITY;Quantité d'élément
+IFCPROPERTYTEMPLATEDEFINITION;Définition de modèle de propriété
+IFCPROPERTYSETTEMPLATE;Modèle d'ensemble de propriété
+IFCPROPERTYTEMPLATE;Modèle de propriété
+IFCCOMPLEXPROPERTYTEMPLATE;Modèle de propriété complexe
+IFCSIMPLEPROPERTYTEMPLATE;Modèle de propriété simple
+IFCRELATIONSHIP;Relation
+IFCRELASSIGNS;Assignation
+IFCRELASSIGNSTOACTOR;Assignation à acteur
+IFCRELASSIGNSTOCONTROL;Assignation à contrôle
+IFCRELASSIGNSTOGROUP;Assignation à groupe
+IFCRELASSIGNSTOGROUPBYFACTOR;Association à un groupe avec pondération
+IFCRELASSIGNSTOPROCESS;Assignation à processus
+IFCRELASSIGNSTOPRODUCT;Assignation à produit
+IFCRELASSIGNSTORESOURCE;Assignation à ressource
+IFCRELASSOCIATES;Association
+IFCRELASSOCIATESAPPROVAL;Association à approbation
+IFCRELASSOCIATESCLASSIFICATION;Association à classification
+IFCRELASSOCIATESCONSTRAINT;Association à contrainte
+IFCRELASSOCIATESDOCUMENT;Association à document
+IFCRELASSOCIATESLIBRARY;Association à librairie
+IFCRELASSOCIATESMATERIAL;Association de matériau
+IFCRELCONNECTS;Connection
+IFCRELCONNECTSELEMENTS;Connection d'éléments
+IFCRELCONNECTSPORTS;Connection de ports
+IFCRELCONTAINEDINSPATIALSTRUCTURE;Localisation dans la structure spatiale
+IFCRELFILLSELEMENT;Relation de remplissage
+IFCRELSPACEBOUNDARY;Limite d'espace
+IFCRELSPACEBOUNDARY1STLEVEL;Limites d'espace de premier niveau
+IFCRELSPACEBOUNDARY2NDLEVEL;Limites d'espace de deuxième niveau
+IFCRELDECOMPOSES;Décomposition
+IFCRELAGGREGATES;Regroupement
+IFCRELVOIDSELEMENT;Relation de percement
+IFCRELDEFINES;Définition
+IFCRELDEFINESBYOBJECT;Définition par objet
+IFCRELDEFINESBYPROPERTIES;Définition par propriétés
+IFCRELDEFINESBYTEMPLATE;Définition par modèle
+IFCRELDEFINESBYTYPE;Définition par type
+IFCLAGTIME;Décalage entre processus
+IFCTASKTIME;Propriétés temporelles de tâche
+IFCTASKTIMERECURRING;Propriétés temporelles de tâche périodique
+IFCWORKTIME;Période de travail
+IFCSHAPEASPECT;Aspect de forme
+IFCSTRUCTURALCONNECTIONCONDITION;Condition de connection structurelle
+IFCSTRUCTURALLOAD;Charge structurelle
+IFCTABLE;Table
+IFCTABLECOLUMN;Colonne de table
+IFCTABLEROW;Ligne de table
+IFCTIMEPERIOD;Période temporelle
+IFCTIMESERIES;Séries temporelles
+IFCIRREGULARTIMESERIES;Séries temporelles irrégulières
+IFCREGULARTIMESERIES;Séries temporelles régulières
+IFCTIMESERIESVALUE;Valeur de séries temporelles
+IFCUNITASSIGNMENT;Assignation d'unité
+IFCVIRTUALGRIDINTERSECTION;Intersection virtuelle de grille 
