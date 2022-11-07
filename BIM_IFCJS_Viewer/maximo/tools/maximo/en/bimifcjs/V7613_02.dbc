@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script SYSTEM "script.dtd">
+<script author="ALEXANDRE" scriptname="">
+  <description>Serve ifc file</description>
+  <statements>
+		<insert table="APIROUTE" ignore_duplicates="true">
+	          <insertrow>
+	            <columnvalue column="ROUTE" string="ifc" />
+	            <columnvalue column="HTTPMETHOD" string="GET" />
+	            <columnvalue column="CLASSNAME" string="com.ibm.swg.maximo.oslc.provider.ServeIFCFileHandler" />
+	            <columnvalue column="DESCRIPTION" string="Serve IFC Files stored in bim folder" />
+	            <columnvalue column="ACTIVE" boolean="true" />
+	          </insertrow>
+              <insertrow>
+	            <columnvalue column="ROUTE" string="ifc" />
+	            <columnvalue column="HTTPMETHOD" string="POST" />
+	            <columnvalue column="CLASSNAME" string="com.ibm.swg.maximo.oslc.provider.ServeIFCFileHandler" />
+	            <columnvalue column="DESCRIPTION" string="Serve IFC Files stored in bim folder" />
+	            <columnvalue column="ACTIVE" boolean="true" />
+	          </insertrow>
+	    </insert>   
+  </statements>
+</script> 

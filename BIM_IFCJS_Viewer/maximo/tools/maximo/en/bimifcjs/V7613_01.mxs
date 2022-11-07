@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<updatescript version="">
+	<app apptype="webclient" id="bimmodels">
+		<add before="import_building_model" container="bimmodels" control="dialog">
+			<set property="id" value="ifcjs_upload"/>
+			<set property="label" value="Upload IFC file"/>
+		</add>
+		<add container="ifcjs_upload" control="section">
+			<set property="id" value="ifcjs_upload_s"/>
+		</add>
+		<add container="ifcjs_upload_s" control="uploadfile">
+			<set property="cancellabel" value="Cancel"/>
+			<set property="event" value="uploadifc"/>
+			<set property="id" value="ifcjs_upload_file"/>
+			<set property="label" value="Browse for Model:"/>
+			<set property="maxfilesize" value="800"/>
+			<set property="oklabel" value="OK"/>
+		</add>
+		<add container="main" control="section">
+			<set property="border" value="true"/>
+			<set property="collapsed" value="false"/>
+			<set property="display" value="false"/>
+			<set property="id" value="ifcjs_main"/>
+		</add>
+		<add container="ifcjs_main" control="multilinetextbox">
+			<set property="columns" value="80"/>
+			<set property="dataattribute" value="url"/>
+			<set property="id" value="managemodel_ifcjs_url"/>
+			<set property="inputmode" value="readonly"/>
+			<set property="label" value="Path"/>
+			<set property="rows" value="3"/>
+		</add>
+		<add container="ifcjs_main" control="buttongroup">
+			<set property="id" value="ifcjs_btngroup1"/>
+		</add>
+		<add container="ifcjs_btngroup1" control="pushbutton">
+			<set property="id" value="ifcjs_btngroup1_upload"/>
+			<set property="label" value="Upload model"/>
+			<set property="mxevent" value="ifcjs_upload"/>
+		</add>
+	</app>
+</updatescript>
