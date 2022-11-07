@@ -15,12 +15,51 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html >
 <head>
+	<style>
+		ul {
+			list-style: none;
+			margin-block-start: 0px;
+			padding-left: 5px;
+			padding-right: 5px;
+			margin-block-end: 0px;
+			width: 100px;
+			font-style: italic;
+    		font-weight: bold;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+
+		li {
+			font-style: normal;
+			font-weight: normal;
+			cursor: pointer;
+			padding-left:2px;
+			padding-right: 2px;
+		}
+
+		li:hover {
+			background: lightgoldenrodyellow;
+		}
+	</style>
   <script type="text/javascript" >
 	function setup()
 	{
 
 		var fe = window.frameElement;
-		var table = document.getElementById( "resizeTable" );
+		var list = document.getElementById("resizeList");
+		var defaultResize = document.getElementById("defaultResize");
+		var lblResizeTitle = parent.getValue( "resize_title" );
+		var lblResizeDefault = parent.getValue( "resize_default" );
+
+		list.insertBefore(document.createTextNode(lblResizeTitle), list.firstChild);
+		defaultResize.innerHTML = lblResizeDefault;
+
+		var height   = list.scrollHeight;
+		var width    = list.scrollWidth;
+		fe.width  = width;
+		fe.height = height;
+		fe.style.border = "0px";
+		/*var table = document.getElementById( "resizeTable" );
 		if( table != undefined )
 		{
 			var value = parent.getValue( "resize_title" );
@@ -33,8 +72,16 @@
 			var width    = table.scrollWidth
 			fe.width  = width + 4;
 			fe.height = height + 4;
-		}
-		fe.onblur = closeResize;
+		}*/
+		list.onblur = closeResize;
+
+		var observer = new MutationObserver(function(mutations) {
+			if ( fe.style.visibility === "visible" ) {
+				list.focus();
+			}
+		});
+		observer.observe(fe, { attributes : true, attributeFilter : ['style'] });
+
 	}
 
 	
@@ -59,19 +106,21 @@
   
 	function resizeEvent( id ) 
 	{
+		closeResize();
 		parent.resize( id );
 	}
   </script>
 
-  <ul>
-	<li onclick="resizeEvent(0)">720x1200</li>
-	<li onclick="resizeEvent(1)">768x1024</li>
-	<li onclick="resizeEvent(2)">720x1200</li>
-	<li onclick="resizeEvent(7)">800x1200</li>
-	<li onclick="resizeEvent(3)">1024x1280</li>
-	<li onclick="resizeEvent(4)">1080x1920</li>
-	<li onclick="resizeEvent(5)">1200x1600</li>
-	<li onclick="resizeEvent(6)">1200x1920</li>
+  
+  <ul id="resizeList" tabindex="1">
+	<li id="defaultResize" onclick="resizeEvent('0')">720x1200</li>
+	<li onclick="resizeEvent('1')">768x1024</li>
+	<li onclick="resizeEvent('2')">720x1200</li>
+	<li onclick="resizeEvent('7')">800x1200</li>
+	<li onclick="resizeEvent('3')">1024x1280</li>
+	<li onclick="resizeEvent('4')">1080x1920</li>
+	<li onclick="resizeEvent('5')">1200x1600</li>
+	<li onclick="resizeEvent('6')">1200x1920</li>
   </ul>
   <!--
   <table id=resizeTable border="0">

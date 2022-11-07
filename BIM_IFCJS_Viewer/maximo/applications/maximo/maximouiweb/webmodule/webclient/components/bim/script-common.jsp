@@ -560,7 +560,7 @@
 				//ctrl.style.height = (parseInt(_height, 10) + 100) + "px";
 				if( viewer != null && viewer.reziseViewer != null )
 				{
-					viewer.reziseViewer( (height - 30), ctrl.clientWidth );
+					viewer.reziseViewer( (height - 30), _width );
 				}
 			}
 			// there may not be a toolbar
@@ -608,7 +608,8 @@
 			var yOffset = 0;
 			if( document.body.scrollLeft ) xOffset = document.body.scrollLeft;
 			if( document.body.scrollTop )  yOffset = document.body.scrollTop;
-			ss.style.left = mouseX - ss.width + xOffset  + 2;
+			var ssStyle = window.getComputedStyle(ss);
+			ss.style.left = mouseX - parseInt("0" + ssStyle.width) + xOffset  + 2;
 			ss.style.top  = mouseY + yOffset  - 2;
 			ss.style.visibility = "visible";
 			var frame = window.frames.<%=id%>_selectSize; 

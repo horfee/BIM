@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <title>Classification Manager</title>
+  <g transform="matrix(1, 0, 0, 1, -599.878967, 0)">
+    <path d="M 627.8 75.687 L 947.708 1.375 L 1071.764 101.814 L 1072.267 398.138 L 947.405 498.625 L 627.8 424.488 L 627.8 75.687 Z" style="stroke: rgb(0, 0, 0); stroke-linejoin: round; fill: rgb(239, 239, 239); stroke-width: 4px;"/>
+    <polygon style="stroke: rgb(0, 0, 0); fill: rgb(214, 242, 239);" points="627.491 423.463 627.491 75.606 710.06 56.429 710.06 443.706"/>
+    <polygon style="stroke: rgb(0, 0, 0); fill: rgb(146, 208, 201); stroke-width: 2px;" points="710.398 443.794 710.398 56.159 792.193 84.913 792.193 413.987"/>
+    <polygon style="stroke: rgb(0, 0, 0); fill: rgb(177, 217, 213); stroke-width: 2px;" points="792.193 413.986 792.193 84.977 886.711 68.464 886.711 431.416"/>
+    <polygon style="stroke: rgb(0, 0, 0); fill: rgb(76, 151, 143); stroke-width: 2px;" points="886.996 431.416 886.996 68.18 939.38 93.802 939.38 405.509"/>
+    <polygon style="stroke: rgb(0, 0, 0); fill: rgb(115, 195, 187); stroke-width: 2px;" points="939.664 93.739 939.664 405.762 1043.008 420.851 1043.008 78.966"/>
+    <line style="stroke: rgb(0, 0, 0); stroke-linejoin: round; stroke-linecap: round; fill: rgb(239, 239, 239); stroke-width: 3px;" x1="947.507" y1="1.8" x2="947.507" y2="498.232"/>
+    <polygon style="stroke: rgb(0, 0, 0); fill: rgb(25, 94, 87);" points="1043.292 79.251 1043.292 420.661 1071.477 397.886 1071.477 101.868"/>
+    <g transform="matrix(1, 0, 0, 1, -336.140991, -327.258972)">
+      <path d="M 963.941 402.946 L 1283.849 328.634 L 1407.905 429.073 L 1408.408 725.397 L 1283.546 825.884 L 963.941 751.747 L 963.941 402.946 Z" style="stroke: rgb(0, 0, 0); stroke-width: 2px; stroke-linejoin: round; fill: none;"/>
+    </g>
+  </g>
+</svg>

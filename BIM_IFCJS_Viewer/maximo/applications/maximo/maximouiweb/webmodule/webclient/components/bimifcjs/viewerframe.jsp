@@ -21,6 +21,10 @@
     <%@ include file="header.jsp" %>
 
     <style>
+        body {
+          overflow: hidden;
+        }
+        
         .toolbar UL
         {
             white-space: nowrap; 
@@ -36,7 +40,8 @@
         .toolbar LI A.on:focus,
         .toolbar LI A.on:hover,	
         .toolbar LI A.onhover {
-            background-image:url(<%=IMAGE_PATH%>toolbar/tb_button_hover.gif);
+            background: lightblue,
+            border-radius: 5px;
         }
     </style>
 </head>  
@@ -46,12 +51,12 @@
 <%@ include file="../bim/script-common.jsp" %>
 
 <%
-String viewerLogo  = "";
+String viewerLogo  = BIM_IMAGE_PATH + "/ifcjs.png";
 %>
 	
 <%--  Message table   --%>	
 <table id=<%=msgTable%> bgcolor="<%=background%>" 
-	   style="position:absolute;visibility:visible;color:<%=foreground%>; width:100%; height:100%">
+	   style="position:absolute;visibility:hidden;color:<%=foreground%>; width:100%; height:100%">
     <tr> 
      <td style="height:<%=toolbar_height%>; background-color: #dfdfdf; background-size: <%=toolbar_height%>; background-image:<%=TOOLBAR_IMG%>">
         <table id=<%=msgToolbarId%> style="width:100%">
@@ -108,24 +113,15 @@ String viewerLogo  = "";
       </td>
     </tr>
 
-    <tr bgColor="#FFFFFF" style="height:1"><td></td></tr>
-
-    <tr><td id=<%=msgCell%> style="width:100%;height:100%; text-align:center">
-    	<%
-			String msg = strings.msgNoViewer;
-			idx = msg.indexOf(  "{0}" );
-			if( idx >= 0 )
-			{
-				String start = msg.substring( 0, idx );
-				String end   = msg.substring( idx + 3 );
-				msg = start + "<A href=\"http://www-304.ibm.com/software/brandcatalog/ismlibrary/details?catalog.label=1TW10MA44\">ISM</A>" + end;
-			}
-		%>
-      <em style=" text-align:center; width:100%;"><%=msg%></em>
-    	<!-- Remove the no viewer message and uncomment the no model message 
-      <em><%=strings.msgNoModel%></em>
-    	 -->
-    </td></tr>
+    <tr bgColor="#FFFFFF" style="height:1">
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td id=<%=msgCell%> style="width:100%;height:100%; text-align:center">
+        
+      </td>
+    </tr>
 
     <tr bgColor="#FFFFFF" style="height:1;"><td></td></tr>
    	
@@ -141,7 +137,7 @@ String viewerLogo  = "";
 
 <%--  Model table   --%>	
 <table id=<%=modelTable%> bgcolor="<%=background%>" cellpadding="0" cellspacing="0"
-	       style="visibility:hidden;color:<%=foreground%>; width:100%; height:100%">
+	       style="visibility:visible;color:<%=foreground%>; width:100%; height:100%">
   <tr style="height:<%=toolbar_height%>; background-color: #dfdfdf; background-size: <%=toolbar_height%>; background-image:<%=TOOLBAR_IMG%>"> 
     <td >
 		<%@ include file="../bim/maximo-toolbar.jsp" %>
@@ -162,7 +158,7 @@ String viewerLogo  = "";
 	      </td>
         </tr>
         <tr bgColor="#FFFFFF" valign="bottom"><td style="height:1;  width:100%">
-      </table>		 <%-- Close Navisworks table --%>
+      </table>
     </td></tr>
     
 	<%@ include file="toolbar.jsp" %>
@@ -174,7 +170,6 @@ String viewerLogo  = "";
       </td>
     </tr>
   </table>  <%-- Close control table --%>
-hello
   <iframe id=<%=id%>_selectSize  frameborder="3"
           style="position:absolute;borderColor:#888888;background:#FFFFFF;visibility:hidden;z-index:20000"
           marginwidth="0" marginheight="0" scrolling="no"

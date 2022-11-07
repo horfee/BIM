@@ -11,3 +11,9 @@
 --%>
 <%@page import="psdi.server.MXServer"%>
 
+<script type="text/javascript" src="<%=wcs.getMaximoRequestContextURL()%>/webclient/javascript/bimifcjs/ifcjs_bundled_iife.js"></script>
+<link rel="stylesheet" type="text/css" href="<%=CSS_PATH%>/bimifcjs/bim-viewer.css" />
+<link rel="stylesheet" type="text/css" href="<%=CSS_PATH%>/bimifcjs/panel.css" />
+<link rel="stylesheet" type="text/css" href="<%=CSS_PATH%>/bimifcjs/tree.css" />
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    
